@@ -114,6 +114,9 @@ PRODUCT_PACKAGES += \
 # Device properties
 include $(LOCAL_PATH)/properties/device_prop.mk
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \

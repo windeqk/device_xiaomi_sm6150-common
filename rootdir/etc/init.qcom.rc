@@ -141,6 +141,9 @@ on boot
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
 
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
     # Enable qcrild and data services
     enable vendor.qcrild
     enable vendor.qcrild2

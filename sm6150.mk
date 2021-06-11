@@ -38,8 +38,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.soundtrigger@2.2-impl
+    android.hardware.bluetooth.audio@2.0-impl
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -171,6 +170,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
+# Get Hotword stuff
+$(call inherit-product-if-exists, vendor/google/google.mk)
+
+# Hotword Enrollment
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hotword/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
+    $(LOCAL_PATH)/configs/hotword/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-hotword.xml
 
 # Handheld hardware
 PRODUCT_COPY_FILES += \

@@ -281,7 +281,8 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    android.hardware.power.stats@1.0-service.mock
 
 # Protobuf
 PRODUCT_PACKAGES += \

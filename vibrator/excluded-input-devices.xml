@@ -31,4 +31,5 @@
 
     <device name="drv2624:haptics"/>
     <device name="aw8624_haptic"/>
+    <device name="drv2624:haptics"/>
 </devices>

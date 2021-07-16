@@ -204,8 +204,8 @@ on charger
     start vendor.power_off_alarm
     chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/white/brightness
-    write /sys/class/leds/red/brightness 255
-    write /sys/class/leds/white/brightness 255
+    write /sys/class/leds/red/brightness 51
+    write /sys/class/leds/white/brightness 51
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
     class main

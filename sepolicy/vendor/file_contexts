@@ -26,12 +26,6 @@
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6150  u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock    u:object_r:hal_power_stats_default_exec:s0
 
-# Fingerprint
-/sys/devices/soc/soc:fpc1020.*/irq                                   u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc1020.*/hw_reset                              u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc1020.*/fingerdown_wait                       u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc1020.*/wakeup_enable                         u:object_r:fingerprint_device:s0
-
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
 

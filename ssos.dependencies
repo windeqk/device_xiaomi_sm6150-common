@@ -5,5 +5,12 @@
 	"clone-depth":	"1",
 	"target_path":	"hardware/xiaomi",
 	"branch":	"lineage-18.1"
+    },
+    {
+    	"repository":	"ghostrider-reborn/android_kernel_xiaomi_surya",
+	"remote":	"github",
+	"clone-depth":	"1",
+	"target_path":	"kernel/xiaomi/surya",
+	"branch":	"LA.UM.9.x"
     }
 ]

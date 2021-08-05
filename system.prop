@@ -28,6 +28,12 @@ dalvik.vm.dex2oat64.enabled=true
 # DPM
 persist.vendor.dpm.feature=11
 
+# Gboard
+ro.com.google.ime.corner_key_r=36
+ro.com.google.ime.kb_pad_port_b=3
+ro.com.google.ime.kb_pad_port_l=3
+ro.com.google.ime.kb_pad_port_r=3
+
 # IORap
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true

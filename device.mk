@@ -349,6 +349,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOARD_PLATFORM := sm6150
 PRODUCT_USES_QCOM_HARDWARE := true
 
+# Poco Parts
+$(call inherit-product-if-exists, vendor/PocoParts/pocoparts.mk)
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \

@@ -12,5 +12,11 @@
 	"clone-depth":	"1",
 	"target_path":	"kernel/xiaomi/surya",
 	"branch":	"LA.UM.9.x"
+    },
+    {
+    	"repository":	"windeqk/vendor_PocoParts",
+	"target_path":	"vendor/PocoParts",
+	"remote":	"github",
+	"branch":	"r"
     }
 ]

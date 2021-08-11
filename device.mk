@@ -112,7 +112,7 @@ PRODUCT_PACKAGES += \
     libsuspend
 
 # Device properties
-include $(LOCAL_PATH)/device_prop.mk
+include $(LOCAL_PATH)/properties/device_prop.mk
 
 # Display
 PRODUCT_PACKAGES += \
